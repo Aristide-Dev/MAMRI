@@ -10,7 +10,7 @@ class Report extends Model
 
     const CATEGORIES_LIST = [
         [
-            'id'=>'reports',
+            'id'=>'rapports',
             'label'=>'Rapports',
         ],
         [

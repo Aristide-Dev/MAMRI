@@ -122,9 +122,9 @@ export default function OrganisationMissionsPage() {
         <div className="absolute inset-0 bg-pattern opacity-10"></div>
         <div className="relative container mx-auto px-4 py-24">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="inline-block px-4 py-2 bg-white/10 rounded-full text-white text-sm font-medium mb-4">
+            {/* <span className="inline-block px-4 py-2 bg-white/10 rounded-full text-white text-sm font-medium mb-4">
               Décret D/2021/064/PRG/SGG du 25 février 2021
-            </span>
+            </span> */}
             <h1 className="text-5xl font-bold text-white mb-6">
               Organisation et Missions
             </h1>

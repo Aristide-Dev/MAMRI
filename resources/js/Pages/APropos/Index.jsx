@@ -102,7 +102,7 @@ export default function AProposPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Mission d'Appui à la Mobilisation des Ressources Internes
               </h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+              <p className="text-lg text-gray-700 text-justify leading-relaxed mb-8">
                 La MAMRI est un organe stratégique rattaché à la Présidence de la République, 
                 créée par le décret D/2019/050/PRG/SGG en date du 31 janvier 2019. Notre mission 
                 principale est d'intensifier et d'accélérer la mobilisation des ressources 
@@ -146,9 +146,9 @@ export default function AProposPage() {
               ))}
             </div>
 
-            {/* Chiffres clés */}
+            {/* Appui à la mobilisation des recettes */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Chiffres Clés</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Appui à la mobilisation des recettes</h3>
               <div className="grid grid-cols-2 gap-2">
                 {chiffresClés.map((stat, idx) => (
                   <div key={idx} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -175,36 +175,6 @@ export default function AProposPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary-800">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Restez informé
-          </h2>
-          <p className="text-xl text-white/90 mb-10 max-w-3xl mx-auto">
-            Abonnez-vous à notre newsletter pour recevoir les dernières actualités, initiatives, 
-            et opportunités pour contribuer au développement de la Guinée.
-          </p>
-          <form className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
-            <input
-              type="email"
-              placeholder="Entrez votre email"
-              className="w-full md:w-auto px-6 py-4 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-light"
-              required
-            />
-            <button
-              type="submit"
-              className="bg-white text-primary px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-colors"
-            >
-              S’abonner
-            </button>
-          </form>
-          <p className="text-sm text-white/80 mt-6">
-            Nous respectons votre vie privée. Votre adresse email ne sera jamais partagée.
-          </p>
         </div>
       </section>
 

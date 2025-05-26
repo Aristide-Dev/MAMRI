@@ -55,19 +55,19 @@ const RessourcesNonFiscalesPage = () => {
       {
         title: "Télépaiement",
         description: "Mise en place des systèmes de paiement électronique",
-        status: "En cours",
+        status: "seront partagées sous peu",
         progress: 75
       },
       {
         title: "Guichet Unique",
         description: "Centralisation des services et paiements",
-        status: "En cours",
+        status: "seront partagées sous peu",
         progress: 60
       },
       {
         title: "Formation",
         description: "Programme de formation des agents",
-        status: "En cours",
+        status: "seront partagées sous peu",
         progress: 85
       }
     ]

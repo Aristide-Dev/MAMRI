@@ -30,34 +30,34 @@ import {
 const directions = [
   {
     icon: Calculator,
-    title: "Ressources Fiscales",
+    title: "Direction des Ressources Fiscales et Maîtrise des dépenses",
     description: "Optimisation de la collecte fiscale",
     href: route('directions.fiscales')
   },
   {
     icon: Building2,
-    title: "Ressources Douanières",
+    title: "Direction des Ressources Douanières",
     description: "Modernisation des douanes",
     href: route('directions.douanieres')
   },
   {
     icon: Coins,
-    title: "Ressources Non Fiscales",
+    title: "Direction des Ressources Non Fiscales",
     description: "Diversification des revenus",
     href: route('directions.non_fiscales')
   },
   {
     icon: PiggyBank,
-    title: "Maîtrise des Dépenses",
-    description: "Gestion des exonérations",
-    href: route('directions.depenses')
-  },
-  {
-    icon: Binary,
-    title: "Digitalisation",
+    title: "Direction de la Digitalisation",
     description: "Transformation numérique",
     href: route('directions.digitalisation')
-  }
+  },
+  // {
+  //   icon: Binary,
+  //   title: "Digitalisation",
+  //   description: "Transformation numérique",
+  //   href: route('directions.digitalisation')
+  // }
 ];
 
 const missions = [
@@ -91,7 +91,7 @@ const slides = [
   {
     image: 'images/hero/mot_du_coordinateur_cover.jpg',
     title: 'Renforcer les capacités fiscales',
-    description: 'Des réformes innovantes pour élargir l’assiette fiscale.',
+    description: "Des réformes innovantes pour élargir l'assiette fiscale.",
     buttons: [{ label: 'Découvrir les projets', href: route('directions.projets'), style: 'primary' }],
   },
   {
@@ -151,35 +151,35 @@ export default function Welcome() {
       <section className="relative overflow-hidden">
         <Slider {...settings}>
           {slides.map((slide, index) => (
-            <div key={index} className="relative h-[50vh] min-h-[500px]">
+            <div key={index} className="relative h-[40vh] min-h-[400px]">
               <div className="absolute inset-0">
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-full h-full object-cover transform scale-105 animate-ken-burns"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30" />
               </div>
               <div className="relative container mx-auto px-4 h-full flex items-center">
-                <div className="text-white max-w-2xl animate-fade-in-up">
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+                <div className="text-white max-w-2xl">
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
                     {slide.title}
                   </h1>
-                  <p className="text-xl mb-10 leading-relaxed text-gray-200">
+                  <p className="text-lg mb-4 leading-relaxed text-gray-200">
                     {slide.description}
                   </p>
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-3">
                     {slide.buttons.map((button, idx) => (
                       <a
                         key={idx}
                         href={button.href}
-                        className={`group px-8 py-4 rounded-lg font-medium transition-all duration-300 flex items-center transform hover:scale-105 ${button.style === 'primary'
-                          ? 'bg-primary text-white hover:bg-primary-800'
-                          : 'bg-white text-gray-900 hover:bg-gray-100'
+                        className={`px-8 py-4 rounded-lg font-medium transition-all duration-300 flex items-center ${button.style === 'primary'
+                          ? 'bg-primary text-white'
+                          : 'bg-white text-gray-900'
                           }`}
                       >
                         {button.label}
-                        <Icons.ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                        <Icons.ChevronRight className="ml-2" />
                       </a>
                     ))}
                   </div>
@@ -194,31 +194,30 @@ export default function Welcome() {
         <div className="container mx-auto px-4 py-10  bg-white">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
             {/* Colonne gauche : Profil du Coordinateur */}
-            <div className="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
+            <div className="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden shadow-lg">
               <div className="relative overflow-hidden">
                 <img
                   src="/images/mohamed_lamine_doumbouya_coordinateur_mamri_2024.png"
                   alt="Dr Mohamed Lamine DOUMBOUYA"
-                  className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-all duration-500"
+                  className="w-full h-[300px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2">Dr Mohamed Lamine DOUMBOUYA</h3>
-                  <p className="text-white/90">Coordonnateur Général de la MAMRI</p>
+                <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
+                  <h3 className="text-xl font-bold mb-1">Dr Mohamed Lamine DOUMBOUYA</h3>
+                  <p className="text-sm text-white/90">Coordonnateur Général de la MAMRI</p>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-gray-600 mb-6 line-clamp-4">
+              <div className="p-4">
+                <p className="text-gray-600 mb-4 line-clamp-4">
                   "Notre mission est de renforcer la mobilisation des ressources internes pour
                   un développement durable de la Guinée."
                 </p>
                 <a
                   href={route('about.mot_Coordinateur')}
-                  className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg 
-                     shadow-lg hover:bg-primary-800 transition-all duration-300 group-hover:translate-y-[-2px]"
+                  className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg"
                 >
                   Mot du Coordonnateur
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </div>
             </div>
@@ -253,18 +252,17 @@ export default function Welcome() {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="group p-4 rounded-xl hover:bg-gray-50 transition-all duration-300
-                       transform hover:translate-x-2"
+                    className="p-3 rounded-xl"
                   >
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-3">
                       <div className="flex-shrink-0">
-                        <item.icon className="w-10 h-10 text-primary group-hover:scale-110 transition-transform" />
+                        <item.icon className="w-8 h-8 text-primary" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">
+                        <h3 className="font-bold text-gray-900">
                           {item.title}
                         </h3>
-                        <p className="text-gray-600 text-sm mt-1">{item.description}</p>
+                        <p className="text-gray-600 text-sm">{item.description}</p>
                       </div>
                     </div>
                   </div>
@@ -332,9 +330,9 @@ export default function Welcome() {
       {/* Missions */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Ce que nous faisons</h2>
-            <p className="text-xl text-gray-600">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Ce que nous faisons</h2>
+            <p className="text-lg text-gray-600">
               Découvrez notre mission, nos objectifs et notre approche pour le développement durable de la Guinée.
             </p>
           </div>
@@ -342,13 +340,13 @@ export default function Welcome() {
             {missions.map((mission, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center text-center p-8 bg-white rounded-lg shadow-md transition-transform duration-200 hover:scale-105 hover:shadow-lg"
+                className="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md"
               >
-                <div className="flex items-center justify-center w-16 h-16 mb-4 bg-primary-100 rounded-full">
-                  <mission.icon className="w-8 h-8 text-primary-800" />
+                <div className="flex items-center justify-center w-14 h-14 mb-3 bg-primary-100 rounded-full">
+                  <mission.icon className="w-7 h-7 text-primary-800" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">{mission.title}</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">{mission.title}</h3>
+                <p className="text-gray-700">
                   {mission.description}
                 </p>
               </div>
@@ -360,22 +358,22 @@ export default function Welcome() {
       {/* Directions de Projet */}
       <section className="py-16 bg-gradient-to-r from-primary to-primary-800">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-200 mb-4">Nos Directions de Projet</h2>
-            <p className="text-xl text-gray-100">Accédez rapidement aux principales initiatives visant à renforcer la mobilisation des ressources.</p>
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-200 mb-3">Nos Directions de Projet</h2>
+            <p className="text-lg text-gray-100">Accédez rapidement aux principales initiatives visant à renforcer la mobilisation des ressources.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-2">
             {directions.map((direction, index) => (
               <a
                 key={index}
                 href={direction.href}
-                className="flex flex-col items-start p-6 bg-white rounded-lg shadow-md transform transition duration-200 hover:scale-105 hover:shadow-lg hover:bg-gray-100"
+                className="flex flex-col items-start p-5 bg-white rounded-lg shadow-md"
               >
-                <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary-100 mb-4">
-                  <direction.icon className="w-8 h-8 text-primary-800" />
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-100 mb-3">
+                  <direction.icon className="w-7 h-7 text-primary-800" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">{direction.title}</h3>
-                <p className="text-gray-700 text-sm leading-relaxed">{direction.description}</p>
+                <h3 className="text-lg font-semibold text-gray-800 mb-1">{direction.title}</h3>
+                <p className="text-gray-700 text-sm">{direction.description}</p>
               </a>
             ))}
           </div>
@@ -408,16 +406,15 @@ export default function Welcome() {
                     <img
                       src={"/storage/" + item.image}
                       alt={item.title}
-                      className="w-full h-48 object-cover"
+                      className="w-full h-40 object-cover"
                     />
-                    <div className="p-6">
-                      <span className="text-sm text-gray-500">{new Date(item.published_at).toLocaleDateString()}</span>
-                      <h3 className="text-xl font-semibold mt-2 mb-3">{item.title}</h3>
-                      <p className="text-gray-600 mb-4">{item.excerpt}</p>
+                    <div className="p-4">
+                      <span className="text-xs text-gray-500">{new Date(item.published_at).toLocaleDateString()}</span>
+                      <h3 className="text-lg font-semibold mt-1 mb-2">{item.title}</h3>
+                      <p className="text-sm text-gray-600 mb-3">{item.excerpt}</p>
                       <a
                         href={route('actualites.show', { slug: item.slug })}
-                        // href={`/actualites/${item.id}`}
-                        className="text-primary hover:text-primary-800 font-medium"
+                        className="text-primary text-sm"
                       >
                         Lire la suite
                       </a>

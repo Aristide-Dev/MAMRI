@@ -13,7 +13,7 @@ const ContactPage = () => {
         phone: "+224 629001379",
         email: "contacts@mamri.gov.gn",
         hours: {
-            weekdays: "8h30 - 17h00",
+            weekdays: "8h00 - 17h00",
         },
         social: [
             { name: "Facebook", icon: Facebook, url: "https://www.facebook.com/MAMRIGN" },
@@ -258,27 +258,6 @@ const ContactPage = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-
-
-
-            {/* Section Mission */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-6">Notre Mission</h2>
-                        <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                            La MAMRI a pour mission d'intensifier et accélérer la dynamique de réformes pour accroître rapidement, significativement et durablement la mobilisation des ressources internes, en vue du financement des dépenses d'investissement et de la politique nationale de partage de la prospérité.
-                        </p>
-                        {/* <a 
-              href="/about"
-              className="inline-flex items-center text-primary hover:text-primary-700 font-medium"
-            >
-              En savoir plus
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </a> */}
                     </div>
                 </div>
             </section>

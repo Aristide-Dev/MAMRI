@@ -79,7 +79,7 @@ const CoordinatorMessagePage = () => {
                   <div className="prose prose-lg max-w-none">
                     <div className="flex items-start mb-8">
                       <Quote className="w-12 h-12 text-primary mr-4 flex-shrink-0" />
-                      <p className="text-xl text-gray-600 leading-relaxed italic shadow-xl p-3 rounded-xl text-justify">
+                      <p className="bg-gray-900 text-white text-xl leading-relaxed italic shadow-xl p-3 rounded-xl text-justify">
                         la Mobilisation des Ressources Internes paraît dans un contexte où la problématique du financement de l'économie nationale fait débat.
                       </p>
                       <Quote className="w-12 h-12 text-primary ml-4 flex-shrink-0 rotate-180" />
@@ -99,28 +99,6 @@ const CoordinatorMessagePage = () => {
                         La fiscalisation de l’Aide publique au développement (APD) est aussi discutée dans ce numéro (article 3). Dans un contexte où le Gouvernement recherche des ressources financières substantielles pour relancer l’économie nationale, il s’avère opportun de s’interroger sur la pertinence de la politique d’exonération fiscale accordée à l’Aide Publique au Développement dans notre pays. La volonté d’élargir l’assiette fiscale imposable soulève la question de la convenance de cette pratique, d’autant plus que la déclaration de Paris sur l’APD (2015) la remet en cause. Il serait judicieux d’engager des discussions avec les partenaires au développement à ce propos, éventuellement une étude analytique approfondie serait au préalable utile.
                         La Loi de Finances Initiale (LFI) pour l’année 2024 (article 4) prévoit une augmentation significative (plus de 7 %) des recettes hors dons de l’État par rapport à 2023. Toutefois, selon les premières données sur les impacts de l’incendie du dépôt central en décembre dernier et sur les perturbations des réseaux de communication, la réalisation de ces prévisions pourrait être compromise. Dans ce cas, un accent particulier doit être mis sur la rationalisation des dépenses publiques et sur des réformes clés, permettant à la fois de mobiliser plus de ressources et de soutenir la croissance économique, pour éviter de creuser davantage le déficit budgétaire de l’État.
                       </p>
-                  </div>
-                </div>
-
-                {/* Métriques et Impact */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-white rounded-2xl shadow-lg p-6">
-                    <FileText className="w-8 h-8 text-primary mb-4" />
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      Objectifs Budgétaires
-                    </h3>
-                    <p className="text-gray-600">
-                      Amélioration de la gouvernance et de la gestion des ressources publiques
-                    </p>
-                  </div>
-                  <div className="bg-white rounded-2xl shadow-lg p-6">
-                    <Eye className="w-8 h-8 text-primary mb-4" />
-                    <h3 className="text-lg font-bold text-gray-900 mb-2">
-                      Vision Stratégique
-                    </h3>
-                    <p className="text-gray-600">
-                      Croissance inclusive et développement durable
-                    </p>
                   </div>
                 </div>
 

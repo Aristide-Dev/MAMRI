@@ -30,7 +30,7 @@ export const menuItems = [
       { label: 'Présentation', href: 'about.index', icon: FileText }, // route('apropos.presentation')
       { label: 'Organisation', href: 'about.organisation', icon: Users }, // route('about.equipe')
       { label: 'Mission et Objectifs', href: 'about.missions', icon: Briefcase }, // route('about.missions')
-      { label: 'Mot du Coordinateur', href: 'about.mot_Coordinateur', icon: MessageSquare }, // route('apropos.coordinateur')
+      { label: 'Mot du Coordonateur', href: 'about.mot_Coordinateur', icon: MessageSquare }, // route('apropos.coordinateur')
     ]
   },
   {
@@ -39,11 +39,11 @@ export const menuItems = [
     actif: 'directions.*', // route('directions.index')
     children: [
       { label: 'Présentation', href: 'directions.projets', icon: Building2 }, // route('directions.projets')
-      { label: 'Ressources Fiscales', href: 'directions.fiscales', icon: PieChart }, // route('directions.fiscales')
-      { label: 'Ressources Douanières', href: 'directions.douanieres', icon: Boxes }, // route('directions.douanieres')
-      { label: 'Ressources Non Fiscales', href: 'directions.non_fiscales', icon: Coins }, // route('directions.ressources_non_fiscales')
-      { label: 'Dépenses et Arriérés', href: 'directions.depenses', icon: FileBarChart }, // route('directions.depenses')
-      { label: 'Digitalisation', href: 'directions.digitalisation', icon: Binary }, // route('directions.digitalisation')
+      { label: 'Direction des Ressources Fiscales et Maîtrise des dépenses', href: 'directions.fiscales', icon: PieChart }, // route('directions.fiscales')
+      { label: 'Direction des Ressources Douanières', href: 'directions.douanieres', icon: Boxes }, // route('directions.douanieres')
+      { label: 'Direction des Ressources Non Fiscales', href: 'directions.non_fiscales', icon: Coins }, // route('directions.non_fiscales')
+      // { label: 'Direction des Dépenses et Arriérés', href: 'directions.depenses', icon: FileBarChart }, // route('directions.depenses')
+      { label: 'Direction de la Digitalisation', href: 'directions.digitalisation', icon: Binary }, // route('directions.digitalisation')
     ]
   },
   {

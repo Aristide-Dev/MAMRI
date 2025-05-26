@@ -84,15 +84,15 @@ const OrganisationPage = () => {
       
       <div className="relative bg-gradient-to-r from-primary to-primary-800 overflow-hidden">
         <div className="absolute inset-0 bg-pattern opacity-10"></div>
-        <div className="relative container mx-auto px-4 py-24">
+        <div className="relative container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto text-center">
             {/* <span className="inline-block px-4 py-2 bg-white/10 rounded-full text-white text-sm font-medium mb-4">
               Décret D/2021/064/PRG/SGG du 25 février 2021
             </span> */}
-            <h1 className="text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl font-bold text-white mb-4">
                 Organisation de la MAMRI
             </h1>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-lg text-white/90 max-w-3xl mx-auto">
                 Une gouvernance collégiale et un réseau technique efficace pour la mobilisation des ressources internes.
             </p>
           </div>
@@ -100,38 +100,38 @@ const OrganisationPage = () => {
       </div>
 
       {/* Structure Organisationnelle */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">Structure Organisationnelle</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Structure Organisationnelle</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
             {sections.map((section, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
               >
-                <div className={`bg-gradient-to-t from-primary-800 ${section.color} p-6 text-white`}>
-                  <section.icon size={32} className="mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">{section.title}</h3>
-                  <p className="opacity-90 text-white">{section.description}</p>
+                <div className={`bg-gradient-to-t from-primary-800 ${section.color} p-4 text-white`}>
+                  <section.icon size={28} className="mb-2" />
+                  <h3 className="text-xl font-bold mb-1">{section.title}</h3>
+                  <p className="opacity-90 text-sm text-white">{section.description}</p>
                 </div>
-                <div className="p-6">
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-gray-900 mb-3">Membres clés</h4>
-                    <ul className="space-y-2">
+                <div className="p-4">
+                  <div className="mb-4">
+                    <h4 className="font-semibold text-gray-900 mb-2">Membres clés</h4>
+                    <ul className="space-y-1">
                       {section.members.map((member, idx) => (
-                        <li key={idx} className="flex items-center text-gray-700">
-                          <ChevronRight size={16} className="mr-2 text-gray-400" />
+                        <li key={idx} className="flex items-center text-gray-700 text-sm">
+                          <ChevronRight size={14} className="mr-1 text-gray-400" />
                           {member}
                         </li>
                       ))}
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-3">Responsabilités</h4>
-                    <ul className="space-y-2">
+                    <h4 className="font-semibold text-gray-900 mb-2">Responsabilités</h4>
+                    <ul className="space-y-1">
                       {section.responsibilities.map((resp, idx) => (
-                        <li key={idx} className="flex items-center text-gray-700">
-                          <ChevronRight size={16} className="mr-2 text-gray-400" />
+                        <li key={idx} className="flex items-center text-gray-700 text-sm">
+                          <ChevronRight size={14} className="mr-1 text-gray-400" />
                           {resp}
                         </li>
                       ))}
@@ -145,13 +145,13 @@ const OrganisationPage = () => {
       </section>
 
       {/* Organigramme */}
-      <section className="py-16 bg-white">
+      <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-3">
               Organigramme
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Une structure hiérarchique claire pour une gestion efficace des ressources.
             </p>
           </div>
@@ -159,8 +159,11 @@ const OrganisationPage = () => {
           <div className="flex flex-col items-center relative mx-auto shadow px-2 py-6 rounded-xl bg-white">
             {/* Niveau 1 : Ministre Secrétaire General à la Présidence */}
             <div className="mb-0 relative">
-              <div className="inline-block bg-red-600 text-white px-6 py-3 rounded-md shadow-md font-semibold border-2 border-red-700">
-                Ministre Secrétaire General à la Présidence
+              <div className="flex flex-col items-center bg-blue-800 text-white px-6 py-3 rounded-md shadow-md font-semibold border-2 border-blue-500">
+                Ministre Secrétaire Général à la Présidence
+                <span className="text-sm font-normal text-gray-900 bg-blue-200 px-2 py-1 rounded-md mt-3">
+                  President du COPIL
+                </span>
               </div>
             </div>
 
@@ -177,17 +180,19 @@ const OrganisationPage = () => {
               {[
                 {
                   title: "Ministre en charge",
-                  role: "de l’Economie et des Finances",
-                  bgColor: "bg-yellow-100",
-                  textColor: "text-yellow-800",
-                  borderColor: "border-yellow-300",
+                  role: "de l'Economie et des Finances",
+                  bgColor: "bg-blue-600",
+                  textColor: "text-gray-200",
+                  borderColor: "border-blue-400",
+                  role: "1er vice-président"
                 },
                 {
                   title: "Ministre en Charge",
                   role: "du Budget",
-                  bgColor: "bg-yellow-100",
-                  textColor: "text-yellow-800",
-                  borderColor: "border-yellow-300",
+                  bgColor: "bg-blue-600",
+                  textColor: "text-gray-200",
+                  borderColor: "border-blue-400",
+                  role: "2ème vice-président"
                 },
               ].map((minister, index) => (
                 <div key={index} className="flex flex-col items-center relative">
@@ -195,11 +200,12 @@ const OrganisationPage = () => {
                   <div className="w-0 h-6 border-l-4 border-gray-400"></div>
                   {/* Box */}
                   <div
-                    className={`${minister.bgColor} ${minister.textColor} px-4 py-2 rounded-md shadow-md font-medium border ${minister.borderColor} text-center`}
+                    className={`flex flex-col items-center ${minister.bgColor} ${minister.textColor} px-4 py-2 rounded-md shadow-md font-medium border ${minister.borderColor} text-center`}
                   >
                     {minister.title}
-                    <br />
-                    {minister.role}
+                    <span className="text-sm font-normal text-gray-900 bg-blue-200 px-2 py-1 rounded-md mt-3">
+                      {minister.role}
+                    </span>
                   </div>
                 </div>
               ))}
@@ -213,9 +219,9 @@ const OrganisationPage = () => {
             {/* Niveau 3 : Ministres et autres membres */}
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-1">
               {[
-                "Ministre en charge des Mines et de la Géologie",
-                "Ministre en charge du Plan et de la Coopération Internationale",
-                "Ministre en charge des Télécommunications et de l’Economie Numérique",
+                "Ministre des Mines et de la Géologie",
+                "Ministre du Plan et de la Coopération Internationale",
+                "Ministre des Télécommunications et de l'Economie Numérique",
                 "Gouverneur de la Banque Centrale de la République de Guinée (BCRG)",
                 "Coordinateur général de la MAMRI Rapporteur du Comité de pilotage",
                 "2 Personnalités Qualifiées Indépendantes",
@@ -225,7 +231,7 @@ const OrganisationPage = () => {
                   {/* Ligne verticale */}
                   <div className="w-0 h-6 border-l-4 border-gray-400"></div>
                   {/* Box */}
-                  <div className="bg-green-100 text-green-800 px-4 py-2 rounded-md shadow font-medium border border-green-300 text-sm text-center max-w-xs">
+                  <div className="bg-blue-400 text-white px-4 py-2 rounded-md shadow font-medium border border-blue-300 text-sm text-center max-w-xs">
                     {texte}
                   </div>
                 </div>
@@ -236,9 +242,9 @@ const OrganisationPage = () => {
       </section>
 
       {/* Informations complémentaires */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-8">
             Informations Complémentaires
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
@@ -266,11 +272,11 @@ const OrganisationPage = () => {
             ].map((item, index) => (
               <div 
                 key={index}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+                className="bg-white p-4 rounded-xl shadow-md"
               >
-                <item.icon size={32} className="text-primary mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <item.icon size={28} className="text-primary mb-2" />
+                <h3 className="text-lg font-bold text-gray-900 mb-1">{item.title}</h3>
+                <p className="text-sm text-gray-600">{item.description}</p>
               </div>
             ))}
           </div>
