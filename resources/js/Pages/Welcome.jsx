@@ -442,7 +442,7 @@ export default function Welcome() {
                 href={partner.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+                className="group flex items-center justify-center p-4 bg-primary-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
               >
                 <img
                   src={partner.image}
