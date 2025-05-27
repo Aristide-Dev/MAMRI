@@ -23,7 +23,7 @@ export const partners = [
     },
     {
         name: 'Ministère de l’Administration du Territoire et de la Décentralisation',
-        image: '/images/partners/matd.png',
+        image: '/images/partners/MATD.png',
         href: 'https://matd.gov.gn/',
     },
     {
