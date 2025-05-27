@@ -63,7 +63,7 @@ export const partners = [
     },
     {
         name: 'Agence de Promotion des Investissements Privés',
-        image: '/images/partners/API.png',
+        image: '/images/partners/APIP.png',
         href: 'https://apip.gov.gn/',
     },
     {
