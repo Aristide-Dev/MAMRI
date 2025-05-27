@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="fixed w-full z-50 bg-white shadow-xl">
-      {/* <TopBar /> */}
+      <TopBar />
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
           <Logo />
