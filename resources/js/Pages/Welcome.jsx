@@ -5,7 +5,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useState, useEffect, useCallback } from 'react';
-import { partners } from '@/constants/partners';
 
 import {
   ArrowRight,
@@ -426,34 +425,6 @@ export default function Welcome() {
             </div>
           </>
         )}
-      </section>
-
-      {/* Section Partenaires */}
-      <section className="py-16 bg-gradient-to-br from-primary-500 to-primary-800">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">Nos Partenaires</h2>
-            <p className="text-lg text-white">Ensemble pour le développement de la Guinée</p>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {partners.map((partner, index) => (
-              <a
-                key={index}
-                href={partner.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center justify-center p-4 bg-primary-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
-              >
-                <img
-                  src={partner.image}
-                  alt={partner.name}
-                  className="max-h-20 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
-                  title={partner.name}
-                />
-              </a>
-            ))}
-          </div>
-        </div>
       </section>
 
       <style jsx>{`

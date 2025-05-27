@@ -53,7 +53,7 @@ export const menuItems = [
     children: [
       { label: 'Actualités', href: 'actualites.index', icon: MessageSquare }, // route('actualites.articles')
       { label: 'Rapports et Publications', href: 'actualites.rapports', icon: FileText }, // route('actualites.rapports')
-      { label: 'Médias', href: 'actualites.medias', icon: Image }, // route('actualites.medias')
+      { label: 'Médiathèque', href: 'actualites.medias', icon: Image }, // route('actualites.medias')
     ]
   },
   // {

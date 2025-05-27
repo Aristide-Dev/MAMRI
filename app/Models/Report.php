@@ -26,8 +26,8 @@ class Report extends Model
             'label'=>'Médias',
         ],
         [
-            'id'=>'Ressources',
-            'label'=>'Ressources',
+            'id'=>'bulletin',
+            'label'=>'Bulletin',
         ],
     ];
 

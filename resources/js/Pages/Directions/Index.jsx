@@ -6,19 +6,19 @@ import { PieChart, Boxes, Coins, FileBarChart, Binary } from 'lucide-react';
 export default function ProjetsPage() {
   const projects = [
     {
-      title: 'Ressources Fiscales et Maitrise des Dépenses',
+      title: 'Direction des Ressources Fiscales et Maitrise des Dépenses',
       description: 'Élargissement de l’assiette, lutte contre la fraude, modernisation des systèmes.',
       icon: PieChart,
       href: 'directions.fiscales', // route('directions.fiscales')
     },
     {
-      title: 'Ressources Douanières',
+      title: 'Direction des Ressources Douanières',
       description: 'Sécurisation et accroissement des recettes douanières.',
       icon: Boxes,
       href: 'directions.douanieres', // route('directions.douanieres')
     },
     {
-      title: 'Ressources Non Fiscales',
+      title: 'Direction des Ressources Non Fiscales',
       description: 'Diversification, digitalisation et révision des textes pour des recettes non fiscales.',
       icon: Coins,
       href: 'directions.non_fiscales', // route('directions.non_fiscales')
@@ -30,7 +30,7 @@ export default function ProjetsPage() {
     //   href: 'directions.depenses', // route('directions.depenses')
     // },
     {
-      title: 'Digitalisation',
+      title: 'Direction de la Digitalisation',
       description: 'Automatisation et traçabilité pour une gestion efficace.',
       icon: Binary,
       href: 'directions.digitalisation', // route('directions.digitalisation')

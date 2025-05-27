@@ -1,6 +1,7 @@
 import React from 'react';
 import { Head } from '@inertiajs/react';
 import AppLayout from '@/Layouts/AppLayout';
+import { partners } from '@/constants/partners';
 
 const PartenairesPage = () => {
   const partenaires = [
@@ -37,12 +38,42 @@ const PartenairesPage = () => {
       <Head title="Partenaires - MAMRI" />
 
       {/* Section Introduction */}
-      <section className="py-20 bg-gradient-to-r from-primary to-primary-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-primary to-primary-800 text-white h-full max-h-screen">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">Nos Partenaires</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Découvrez nos partenaires stratégiques qui nous accompagnent dans la transformation et la modernisation des systèmes fiscaux, douaniers et locaux.
           </p>
+        </div>
+      </section>
+
+      
+
+      {/* Section Partenaires */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          {/* <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-primary mb-4">Nos Partenaires</h2>
+            <p className="text-lg text-primary">Ensemble pour le développement de la Guinée</p>
+          </div> */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+            {partners.map((partner, index) => (
+              <a
+                key={index}
+                href={partner.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center p-4 bg-primary-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
+              >
+                <img
+                  src={partner.image}
+                  alt={partner.name}
+                  className="max-h-20 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+                  title={partner.name}
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 

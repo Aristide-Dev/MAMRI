@@ -21,24 +21,6 @@ const OrganisationPage = () => {
 
   const sections = [
     {
-      title: "Coordination Générale",
-      icon: Network,
-      color: "to-sky-500",
-      description: "Support technique et méthodologique",
-      members: [
-        "Directeurs de Projets",
-        "Chargés de missions",
-        "Chargée de communication",
-        // "Équipe Technique Permanente"
-      ],
-      responsibilities: [
-        "Analyse et information",
-        "Coproduction de propositions",
-        "Suivi des initiatives",
-        "Communication et valorisation"
-      ]
-    },
-    {
       title: "Comité de Pilotage",
       icon: Users,
       color: "to-indigo-500",
@@ -73,7 +55,25 @@ const OrganisationPage = () => {
         "Coordination administrative",
         "Veille sur la qualité"
       ]
-    }
+    },
+    {
+      title: "Coordination Générale",
+      icon: Network,
+      color: "to-sky-500",
+      description: "Support technique et méthodologique",
+      members: [
+        "Directeurs de Projets",
+        "Chargés de missions",
+        "Chargée de communication",
+        // "Équipe Technique Permanente"
+      ],
+      responsibilities: [
+        "Analyse et information",
+        "Coproduction de propositions",
+        "Suivi des initiatives",
+        "Communication et valorisation"
+      ]
+    },
   ];
 
   return (

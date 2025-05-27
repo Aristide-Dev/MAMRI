@@ -21,6 +21,10 @@ const Footer = () => {
       text: "Présidence de la République de Guinée",
     },
     { 
+      href: "https://www.sgg.gov.gn/", 
+      text: "Secrétariat Général du Gouvernement",
+    },
+    { 
       href: "https://www.primature.gov.gn/", 
       text: "Primature",
     },
