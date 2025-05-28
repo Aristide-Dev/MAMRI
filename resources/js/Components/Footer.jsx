@@ -120,15 +120,15 @@ const Footer = () => {
             </div>
             <div className="grid grid-cols-2 items-center gap-4 flex-wrap w-full">
               <img
-                className="h-20 w-full object-contain opacity-90 hover:opacity-100 transition-opacity"
+                className="h-12 w-full object-contain opacity-90 hover:opacity-100 transition-opacity"
                 src="/images/logo/brandingGn.png"
                 alt="Branding de la République de Guinée"
                 loading="eager"
               />
               <img
                 className="h-20 w-full object-contain opacity-90 hover:opacity-100 transition-opacity"
-                src="/images/logo/brandingGn.png"
-                alt="Branding de la République de Guinée"
+                src="/images/logo/Logo-S2040-pour-Fond-Noir.png"
+                alt="Projet Simandou 2040"
                 loading="eager"
               />
             </div>
