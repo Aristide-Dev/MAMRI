@@ -73,7 +73,7 @@ export default function AppLayout({ children }) {
       {/* Bouton retour en haut */}
       <button
         onClick={scrollToTop}
-        className={`fixed right-8 bottom-8 p-3 bg-primary text-white rounded-full shadow-lg transition-all duration-300 ${
+        className={`fixed right-8 bottom-8 p-3 bg-blue-900 text-white rounded-full shadow-lg transition-all duration-300 ${
           state.showBackToTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}
       >
@@ -81,47 +81,7 @@ export default function AppLayout({ children }) {
       </button>
 
       {/* Footer */}
-      
       <Footer />
-      {/* <footer className="bg-gray-900 text-white py-6">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">À propos</h3>
-              <p className="text-gray-400">
-                MAMRI œuvre pour le développement territorial et la gouvernance locale en République de Guinée.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Liens rapides</h3>
-              <ul className="space-y-2">
-                <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">À propos</a></li>
-                <li><a href="/services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-                <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Contact</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li>contact@mamri.gov.gn</li>
-                <li>+224 99 99 99 99</li>
-                <li>Conakry, Guinée</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold mb-4">Suivez-nous</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Facebook</a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Twitter</a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
-              </div>
-            </div>
-          </div>
-          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} MAMRI - Tous droits réservés</p>
-          </div>
-        </div>
-      </footer> */}
     </div>
   );
 }

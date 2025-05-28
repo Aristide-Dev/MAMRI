@@ -6,11 +6,11 @@ import {
 
 // Composant pour le préchargement des ressources
 const PreloadResources = () => (
-  <>
-    <link rel="preload" href="/images/logo/logo-mamri-02.png" as="image" />
-    <link rel="preload" href="/images/logo/brandingGn.png" as="image" />
-    <link rel="preload" href="/images/logo/Logo-S2040-pour-Fond-Noir.png" as="image" />
-    <link rel="preload" href="/images/logo/armoiries-guinee.png" as="image" />
+  <>    
+    <link rel="preload" href="/images/logo/logo-mamri.png" as="image" type="image/png" />
+    <link rel="preload" href="/images/logo/brandingGn.png" as="image" type="image/png" />
+    <link rel="preload" href="/images/logo/Logo-S2040-pour-Fond-Noir.png" as="image" type="image/png" />
+    <link rel="preload" href="/images/logo/Armoiries-Republique-de-Guinee-V2.png" as="image" type="image/png" />
   </>
 );
 
@@ -81,12 +81,12 @@ const Footer = () => {
       label: "LinkedIn",
       color: "#0A66C2" 
     },
-    // { 
-    //   href: "https://www.youtube.com/channel/UC-_gdoMNdf_aG_3HMi6QCfA", 
-    //   icon: <Youtube />, 
-    //   label: "YouTube",
-    //   color: "#FF0000" 
-    // },
+    { 
+      href: "https://www.youtube.com/channel/UC-_gdoMNdf_aG_3HMi6QCfA", 
+      icon: <Youtube />, 
+      label: "YouTube",
+      color: "#FF0000" 
+    },
   ];
 
   const contactInfos = [
@@ -113,24 +113,23 @@ const Footer = () => {
               />
               <img
                 className="h-20 w-auto object-contain flex-1 opacity-90 hover:opacity-100 transition-opacity"
-                src="/images/logo/ARMOIRI-FOND-PRESIDENCE.png"
+                src="/images/logo/Armoiries-Republique-de-Guinee-V2.png"
                 alt="Armoiries de la République de Guinée"
                 loading="eager"
               />
             </div>
             <div className="grid grid-cols-2 items-center gap-4 flex-wrap w-full">
               <img
-                  className="h-20 w-full object-contain opacity-90 hover:opacity-100 transition-opacity"
-                  src="/images/logo/brandingGn.png"
-                  alt="Branding de la République de Guinée"
-                  loading="eager"
+                className="h-20 w-full object-contain opacity-90 hover:opacity-100 transition-opacity"
+                src="/images/logo/brandingGn.png"
+                alt="Branding de la République de Guinée"
+                loading="eager"
               />
               <img
                 className="h-20 w-full object-contain opacity-90 hover:opacity-100 transition-opacity"
-                src="/images/logo/Logo-S2040-pour-Fond-Noir.png"
-                alt="Projet Simandou 2040"
-                loading="lazy"
-                decoding="async"
+                src="/images/logo/brandingGn.png"
+                alt="Branding de la République de Guinée"
+                loading="eager"
               />
             </div>
           </div>

@@ -171,7 +171,7 @@ const OrganisationPage = () => {
             <div className="w-0 h-6 border-l-4 border-gray-400"></div>
 
             {/* Ligne horizontale vers le niveau 3 */}
-            <div className="w-full flex justify-center relative mb-6">
+            <div className="w-2/3 flex justify-center relative mb-6">
               <div className="border-t-4 border-x-4 border-gray-400 w-full md:w-2/3 h-4"></div>
             </div>
 
@@ -179,16 +179,14 @@ const OrganisationPage = () => {
             <div className="flex items-start justify-center space-x-16 relative mb-8 mx-0">
               {[
                 {
-                  title: "Ministre en charge",
-                  role: "de l'Economie et des Finances",
+                  title: "Ministre de l'Economie et des Finances",
                   bgColor: "bg-blue-600",
                   textColor: "text-gray-200",
                   borderColor: "border-blue-400",
                   role: "1er vice-président"
                 },
                 {
-                  title: "Ministre en Charge",
-                  role: "du Budget",
+                  title: "Ministre Budget",
                   bgColor: "bg-blue-600",
                   textColor: "text-gray-200",
                   borderColor: "border-blue-400",
